@@ -18,13 +18,20 @@
 
 ## 📌 Overview
 
-RSA & ECDSA digital signatures, key management,
+
+OSignal is a digital-signature suite for RSA and ECDSA key management, signing, verification and certificate inspection. It generates RSA-2048/4096, ECDSA P-256/384/521 and Ed25519 key pairs, signs text and files with PSS and SHA-256/384/512, and verifies signatures with full key and fingerprint inspection. It ships as a themed desktop application built on the cryptography library.
 
 ---
 
 ## ✨ Features
 
-- RSA/ECDSA/Ed25519 signatures, key management, cert inspection & offline self-test
+
+- RSA-2048/4096, ECDSA P-256/P-384/P-521 and Ed25519 key-pair generation
+- Sign text and files using RSA-PSS with SHA-256/384/512
+- Verify signatures for both text and files, with clear valid/invalid results
+- PEM key import/export plus a key inspector (type, size, fingerprint)
+- Signature hex viewer, SHA-256/MD5 fingerprints and a session signature history log
+- Export signed bundles as JSON, all in a dark OWLSec theme
 
 ---
 
@@ -37,8 +44,10 @@ RSA & ECDSA digital signatures, key management,
 
 ## 🚀 Usage
 
+
 ```bash
 ./OSignal
+./OSignal --help
 ```
 
 ---
